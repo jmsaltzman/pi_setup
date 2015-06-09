@@ -1,0 +1,4 @@
+# Add to ~/.profile: make as .profile_py_ve
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
