@@ -1,4 +1,4 @@
-#! /bin/csh -f
+#!/bin/sh -f
 
 # execute w/sudo
 
