@@ -72,7 +72,7 @@ libpngwriter0c2
 
 import os, sys
 
-sh_header = '#! /bin/csh -f'
+sh_header = '#!/bin/sh -f'
 notes = '''# execute w/sudo
 
 # Package list from "Raspberry Pi Computer Vision Programming"
