@@ -98,8 +98,8 @@ outfile.write(notes)
 for line in lines:
     outfile.write(line)
 outfile.close()
-    
-    
+# Set output file permissions: executable
+os.chmod(fn, 775)
 
 
 
