@@ -1,11 +1,8 @@
-#!/bin/sh -f
-
-# execute w/sudo
+#!/bin/sh -f# execute w/sudo
 
 # Package list from "Raspberry Pi Computer Vision Programming"
 # by Ashwin Pajankar
 # http://www.amazon.com/gp/product/1784398284
-
 apt-get install -y libopencv-dev
 apt-get install -y build-essential
 apt-get install -y libavformat-dev
