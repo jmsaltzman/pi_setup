@@ -1,10 +1,10 @@
 #!/bin/sh -f
 
-set sipi_aerials="http://sipi.usc.edu/database/aerials.tar.gz"
-set sipi_misc="http://sipi.usc.edu/database/misc.tar.gz"
-set sipi_tx="http://sipi.usc.edu/database/textures.tar.gz"
-set sipi_seq="http://sipi.usc.edu/database/sequences.tar.gz"
-set ipp_standard="http://imageprocessingplace.com/downloads_V3/root_downloads/image_databases/standard_test_images.zip"
+export sipi_aerials="http://sipi.usc.edu/database/aerials.tar.gz"
+export sipi_misc="http://sipi.usc.edu/database/misc.tar.gz"
+export sipi_tx="http://sipi.usc.edu/database/textures.tar.gz"
+export sipi_seq="http://sipi.usc.edu/database/sequences.tar.gz"
+export ipp_standard="http://imageprocessingplace.com/downloads_V3/root_downloads/image_databases/standard_test_images.zip"
 
 cd
 mkdir book
@@ -14,12 +14,15 @@ mkdir output
 mkdir test_set
 
 cd code
-set i=1
-while [ $i < 10 ]
-do
-    mkdir chapter0$i
-    @ i++
-done
+mkdir chapter01
+mkdir chapter02
+mkdir chapter03
+mkdir chapter04
+mkdir chapter05
+mkdir chapter06
+mkdir chapter07
+mkdir chapter08
+mkdir chapter09
 mkdir chapter10
     
 cd ../test_set
@@ -33,5 +36,3 @@ wget $sipi_seq
 tar -xvf $sipi_seq
 wget $ipp_standard
 unzip $ipp_standard
-
-
