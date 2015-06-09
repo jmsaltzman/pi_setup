@@ -1,4 +1,4 @@
-raspbi-config
+raspi-config
 
 1. Expand Filesystem: [yes]
 2. Change User Password: [ahem...]
