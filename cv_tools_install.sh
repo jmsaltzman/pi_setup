@@ -1,4 +1,6 @@
-#!/bin/sh -f# execute w/sudo
+#!/bin/sh -f
+
+# execute w/sudo
 
 # Package list from "Raspberry Pi Computer Vision Programming"
 # by Ashwin Pajankar
