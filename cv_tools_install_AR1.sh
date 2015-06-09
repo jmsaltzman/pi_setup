@@ -14,10 +14,10 @@ apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
 apt-get install -y libatlas-base-dev gfortran
 
 wget https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
+#python get-pip.py
 
-pip install virtualenv virtualenvwrapper
+#pip install virtualenv virtualenvwrapper
 
-cat ~/.profile .profile_py_ve > .profile
+#cat ~/.profile .profile_py_ve > .profile
 #mv .profile ~/
 
