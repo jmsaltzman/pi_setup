@@ -11,22 +11,19 @@ Steps:
 
 1. "raspi-config.txt" has the settings I prefer for the "raspi-config" program.
 2. Setup wifi access with the desktop "WiFi Networks Settings" program.
-3. Run "sudo apt-get update"
-3. Run "sudo apt-get upgrade"
-4. Reboot
-5. Run "sudo apt-get install -y git"
-6. Run "git clone https://github.com/jmsaltzman/pi_setup" to get the repo
-7. cd pi_setup
-8. chmod 775 *sh
-9. Run "bash_setup.sh"
-10. Run "vnc_setup.sh" to set up vnc server.
-11. Run "arduino_setup.sh" to install Arduino and to set up serial correctly.
-12. This is a good time to save a system image :)
+3. sudo apt-get update ; sudo apt-get upgrade ; sudo reboot
+4. git clone https://github.com/jmsaltzman/pi_setup   <-- to get this repo
+5. cd pi_setup
+6. chmod 775 *sh
+7. ./bash_setup.sh
+8. ./vnc_setup.sh
+9. ./arduino_setup.sh
+10. This is a good time to save a system image :)
 
 OpenCV setup takes a while, maybe overclock first (???)
 
-1. Run "cv_tools_install_AR1.sh" to install 
-2. Run "cv_tools_install_AR2.sh" to build and finish OpenCV installation. This will take hours! 
-3. Run "cv_files_setup.sh"
+1. ./cv_tools_install_AR1.sh 
+2. ./cv_tools_install_AR2.sh   <-- This will take hours! 
+3. ./cv_files_setup.s"
 
 . DON'T Run cv_tools_install.sh (chmod'ed to 775, run as sudo) to install CV packages! It doesn't work :(
