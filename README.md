@@ -11,7 +11,7 @@ Steps:
 
 1. "raspi-config.txt" has the settings I prefer for the "raspi-config" program.
 2. Setup wifi access with the desktop "WiFi Networks Settings" program.
-3. sudo apt-get update ; sudo apt-get upgrade ; sudo reboot
+3. sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot
 4. git clone https://github.com/jmsaltzman/pi_setup   <-- to get this repo
 5. cd pi_setup
 6. chmod 775 *sh
