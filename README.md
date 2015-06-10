@@ -21,6 +21,7 @@ Steps:
 9. Run "bash_setup.sh"
 10. Run "vnc_setup.sh" to set up vnc server.
 11. Run "arduino_setup.sh" to install Arduino and to set up serial correctly.
+12. This is a good time to save a system image :)
 
 OpenCV setup takes a while, maybe overclock first (???)
 
