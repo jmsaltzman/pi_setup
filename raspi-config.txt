@@ -6,12 +6,11 @@ raspi-config
 4. Internationalisation Options:
 	I1 Locale: disable "en_GB..." with [space], 
 		enable "en-US.UTF8 UTF8" with [space]
+		in "Configuring locales" choose en_US.UTF-8, <Ok>
 	I2 Change Timezone: US, Pacific-New
-	I3 Keyboard Layout: Logitech Cordless Desktop, Other, English (US),
+	I3 Keyboard Layout: Logitech Cordless Desktop, Other, English (US), English (US),
 		No AltGr key, No compose key, <Yes> for Ctrl-Alt-Backspace
 5. Enable Camera: <Enable>
 8. Advanced Options
 	A2 Hostname: jmspi#
-	A3 Memory Split: 64MB for GPU
 	A4 SSH: <Enable>
-
