@@ -16,7 +16,7 @@ Steps:
 5. cd pi_setup
 6. chmod 775 *sh
 7. ./bash_setup.sh
-8. ./vnc_setup.sh
+8. ./vnc_setup.sh   <-- it will ask for vnc password, read-only (no)
 9. ./arduino_setup.sh
 10. This is a good time to save a system image :)
 
