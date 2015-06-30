@@ -18,12 +18,12 @@ Steps:
 7. ./bash_setup.sh
 8. ./vnc_setup.sh   <-- it will ask for vnc password, read-only (no)
 9. ./arduino_setup.sh
-10. This is a good time to save a system image :)
+10. This is a good time to clone a system image.
 
 OpenCV setup takes a while, maybe overclock first (???)
 
 1. ./cv_tools_install_AR1.sh 
-2. ./cv_tools_install_AR2.sh   <-- This will take hours! 
-3. ./cv_files_setup.s"
+2. ./cv_tools_install_AR2.sh   <-- This will take hours 
+3. ./cv_files_setup.sh
 
 . DON'T Run cv_tools_install.sh (chmod'ed to 775, run as sudo) to install CV packages! It doesn't work :(
