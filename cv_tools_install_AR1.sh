@@ -28,4 +28,6 @@ sudo pip install numpy
 
 # Extra installs per Pajankar book
 sudo apt-get install -y python-matplotlib
+sudo apt-get install -y fswebcam
+
 
