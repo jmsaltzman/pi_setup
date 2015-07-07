@@ -27,7 +27,7 @@ sudo apt-get install -y python2.7-dev
 sudo pip install numpy
 
 # Extra installs per Pajankar book
-sudo apt-get install -y python-matplotlib
-sudo apt-get install -y fswebcam
-
-
+sudo apt-get install -y python-matplotlib fswebcam
+sudo apt-get install -y ffmpeg mencoder
+sudo apt-get install -y libavcodec-extra-53
+sudo apt-get install -y libav-tools
