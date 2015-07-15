@@ -31,3 +31,4 @@ sudo apt-get install -y python-matplotlib fswebcam
 sudo apt-get install -y ffmpeg mencoder
 sudo apt-get install -y libavcodec-extra-53
 sudo apt-get install -y libav-tools
+sudo apt-get install -y fbi
