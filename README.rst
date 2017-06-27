@@ -20,23 +20,22 @@ https://www.raspberrypi.org/downloads/raspbian/
 6. chmod 775 *sh
 7. ./bash_setup.sh
 8. Install RealVNC viewer on another machine to run the Pi headless.
+Investigating simplest way to install Python 3.6.1
+9. ./py361_install.sh
 
-# Investigating this script:
-9. ./arduino_setup.sh
 
-10. This is a good time to clone a system image.
+This is a good time to clone a system image.
 
-# Investigating simplest way to install Python 3.6.1
+-------Stop here: need to sort Arduino, virtualenv, and OpenCV installation
+
+Arduino setup:
+./arduino_setup.sh
 
 Install virtualenv:
-
 sudo apt-get install python-virtualenv
 
-# Investigating these for Python 3.6.1 compatibility:
-
-OpenCV setup takes a while...
+Investigating these for Python 3.6.1 compatibility:
+OpenCV setup takes a while:
 1. ./cv_tools_install_AR1.sh 
 2. ./cv_tools_install_AR2.sh   <-- This will take hours 
 3. ./cv_files_setup.sh
-
-DON'T Run cv_tools_install.sh (chmod'ed to 775, run as sudo) to install CV packages! It doesn't work.
