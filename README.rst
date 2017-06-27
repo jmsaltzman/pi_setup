@@ -18,18 +18,18 @@ https://etcher.io/
 
 * Follow "raspi-config.txt" to change the settings when running
 
-```bash
-sudo raspi-config
-```
+.. code-block:: bash
+
+  sudo raspi-config
 
 or with the graphical version under *[Raspberry] > Preferences > Raspberry Pi Configuration*.
 
 
 * Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right. If using wi-fi only:
 
-```bash
-sudo nano /etc/network/interfaces
-```
+.. code-block:: bash
+
+  sudo nano /etc/network/interfaces
 
 and comment out the "iface eth0..." line.
 
@@ -37,14 +37,15 @@ and comment out the "iface eth0..." line.
 
 * Get this repo and run commands:
 
-```bash
-git clone https://github.com/jmsaltzman/pi_setup
-cd pi_setup
-chmod 775 *sh
-./update.sh
-./bash_setup.sh
-sudo reboot
-```
+.. code-block:: bash
+
+  git clone https://github.com/jmsaltzman/pi_setup
+  cd pi_setup
+  chmod 775 *sh
+  ./update.sh
+  ./bash_setup.sh
+  sudo reboot
+
 
 * Install RealVNC viewer on another machine to run the Pi headless.
 
