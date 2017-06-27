@@ -16,22 +16,19 @@ https://etcher.io/
 
 **Steps:**
 
-* Follow "raspi-config.txt" to change the settings when running
+* Follow "raspi-config.txt" to change the settings in the GUI program *[Raspberry] > Preferences > Raspberry Pi Configuration* or in a shell with:
 
 .. code-block:: bash
 
   sudo raspi-config
 
-or with the graphical version under *[Raspberry] > Preferences > Raspberry Pi Configuration*.
 
-
-* Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right. If using wi-fi only:
+* Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right. If using wi-fi only, comment out the "iface eth0..." line in:
 
 .. code-block:: bash
 
   sudo nano /etc/network/interfaces
 
-and comment out the "iface eth0..." line.
 
 * Set a fixed IP address by right-clicking on the wi-fi icon, choose "Wireless & Wired Network Settings", choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This will make headless operation easier.
 
