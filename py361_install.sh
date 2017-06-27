@@ -26,7 +26,5 @@ sudo apt-get -y --purge remove libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-de
 sudo apt-get -y --purge remove libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
 
 # Clean up
-sudo apt-get autoremove
-sudo apt-get clean
-
-
+sudo apt-get -y autoremove
+sudo apt-get -y clean
