@@ -1,11 +1,11 @@
 #!/bin/sh -f
 
 # instructions for installing Python 3.6.1
-# Mostly from https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f
+# Mostly from: https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f
+# Simpler: https://raspberrypi.stackexchange.com/questions/59381/how-do-i-update-my-rpi3-to-python-3-6
 
-# Install required build tools; some may already be installed
-sudo apt-get install -y build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev \
-  libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
+# Issues:
+# "python3" still runs 3.4.2, not 3.6.1
 
 # Download, uncompress, build, and install Python
 wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
@@ -16,15 +16,6 @@ make
 sudo make install
 
 # Remove installation files
+cd ..
 sudo rm -r Python-3.6.1
 rm Python-3.6.1.tgz
-
-# Remove build tools
-sudo apt-get -y --purge remove build-essential tk-dev
-sudo apt-get -y --purge remove libncurses5-dev libncursesw5-dev libreadline6-dev
-sudo apt-get -y --purge remove libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev
-sudo apt-get -y --purge remove libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
-
-# Clean up
-sudo apt-get -y autoremove
-sudo apt-get -y clean
