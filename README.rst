@@ -7,11 +7,12 @@ This repo is my place to keep files to "wget" as soon as the Pi is online.
 
 .sh scripts should be executed from their directory: ~/pi_setup
 
-Updated for Raspbian Jessie with Pixel 2017-06-21 release.
+Updated for Raspbian Jessie with Pixel 2017-06-21 release, downloaded from:
+https://www.raspberrypi.org/downloads/raspbian/
 
-Steps:
-------
-1. "raspi-config.txt" has the settings I prefer for the "raspi-config" program.
+
+**Steps:**
+1. Follow "raspi-config.txt" to change the settings when running 'raspi-config'.
 2. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right. If using wi-fi only, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
 3. 'sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot'
 4. Get this repo with 'git clone https://github.com/jmsaltzman/pi_setup'
