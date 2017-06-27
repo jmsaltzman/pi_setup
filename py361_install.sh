@@ -13,7 +13,7 @@ tar xf Python-3.6.1.tar.xz
 cd Python-3.6.1
 ./configure
 make
-sudo make altinstall
+sudo make install
 
 # Remove installation files
 sudo rm -r Python-3.6.1
