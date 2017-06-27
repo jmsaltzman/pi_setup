@@ -1,16 +1,17 @@
-raspi-config
+Run 'raspi-config' and set these options:
 
-1. Expand Filesystem: [yes]
-2. Change User Password: [ahem...]
-3. Enable Boot to Desktop/Scratch: "Desktop Log in as user 'pi'..."
-4. Internationalisation Options:
-	I1 Locale: disable "en_GB..." with [space], 
+1. Change User Password: to [???] for user "pi"
+2. Hostname change to [???]
+3. Boot Options: B1 Desktop / CLI: Desktop is insecure but nice for headless
+4. Localisation Options:
+	I1 Change Locale: disable "en_GB..." with [space], 
 		enable "en-US.UTF8 UTF8" with [space]
 		in "Configuring locales" choose en_US.UTF-8, <Ok>
-	I2 Change Timezone: US, Pacific-New
-	I3 Keyboard Layout: Logitech Cordless Desktop, Other, English (US), English (US),
-		No AltGr key, No compose key, <Yes> for Ctrl-Alt-Backspace
-5. Enable Camera: <Enable>
-8. Advanced Options
-	A2 Hostname: jmspi#
-	A4 SSH: <Enable>
+	I2 Change Timezone: US, Central (or whatever ;)
+	I3 Change Keyboard Layout: Generic 105-key, Other, English (US), English (US),
+		No AltGr key, No compose key, Ctrl-Alt-Backspace to restart X
+	I4 Change Wi-fi Country: US
+5. Interfaces: turn on P1 Camera, P2 SSH, P3 VNC (more later if needed)
+7. Advanced Options: A1 Expand Filesystem
+
+Finish and reboot
