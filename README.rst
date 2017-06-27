@@ -12,6 +12,7 @@ https://www.raspberrypi.org/downloads/raspbian/
 
 
 **Steps:**
+
 #. Follow "raspi-config.txt" to change the settings when running 'raspi-config'.
 #. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right. If using wi-fi only, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
 #. 'sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot'
