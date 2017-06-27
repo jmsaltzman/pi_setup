@@ -1,11 +1,9 @@
-Files for setting up a Raspberry Pi
-===================================
+Setting up a Raspberry Pi
+=========================
 
-This series of files adds shell shortcuts and installs many packages for general use, Arduino programming, and OpenCV programming.
+This repo is just my place to keep files to "wget" as soon as I get a Pi online.
 
-This repo is my place to keep files to "wget" as soon as the Pi is online.
-
-.sh scripts should be executed from their directory: ~/pi_setup
+These files help with intitial setup by adding shell helpers and installing packages for general use and Python, OpenCV, and Arduino development.
 
 Updated for Raspbian Jessie with Pixel 2017-06-21 release, downloaded from:
 https://www.raspberrypi.org/downloads/raspbian/
@@ -46,21 +44,42 @@ https://etcher.io/
 
 * Install RealVNC viewer on another machine to run the Pi headless.
 
+* Setup github credentials:
 
-This is a good time to clone a system image.
+.. code-block:: bash
+
+  git config --global user.name "My Real Name"
+  git config --global user.email email@example.com
+
+
+* Install Python 3.6.1 with this script:
+
+.. code-block:: bash
+
+  py361_install.sh
+
+
+This is a good time to clone the system image.
+
 
 -------Stop here: need to sort Arduino, virtualenv, and OpenCV installation
 
-Investigating simplest way to install Python 3.6.1
-./py361_install.sh
+To do:
 
-Arduino setup:
+PyCharm installation
+Seems to need this to interface with github
+sudo apt-get install -y gnome-keyring
+
+
+
+
+Check Arduino setup:
 ./arduino_setup.sh
 
 Install virtualenv:
 sudo apt-get install python-virtualenv
 
-Investigating these for Python 3.6.1 compatibility:
+Investigate these for Python 3.6.1 compatibility:
 OpenCV setup takes a while:
 1. ./cv_tools_install_AR1.sh 
 2. ./cv_tools_install_AR2.sh   <-- This will take hours 
