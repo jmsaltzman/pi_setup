@@ -18,7 +18,7 @@ a uuu='u;u;u'
 
 a c='clear'
 a h='history'
-a hg='h | grep'
+a hig='h | grep'
 
 a ps='ps -eaf'
 a psg='ps | grep'
