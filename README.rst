@@ -44,7 +44,7 @@ https://etcher.io/
 
 * Install RealVNC viewer on another machine to run the Pi headless.
 
-* Setup github credentials:
+* Setup git globals:
 
 .. code-block:: bash
 
