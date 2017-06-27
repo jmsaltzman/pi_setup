@@ -12,21 +12,21 @@ https://www.raspberrypi.org/downloads/raspbian/
 
 
 **Steps:**
-1. Follow "raspi-config.txt" to change the settings when running 'raspi-config'.
-2. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right. If using wi-fi only, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
-3. 'sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot'
-4. Get this repo with 'git clone https://github.com/jmsaltzman/pi_setup'
-5. cd pi_setup
-6. chmod 775 *sh
-7. ./bash_setup.sh
-8. Install RealVNC viewer on another machine to run the Pi headless.
-Investigating simplest way to install Python 3.6.1
-9. ./py361_install.sh
-
+#. Follow "raspi-config.txt" to change the settings when running 'raspi-config'.
+#. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right. If using wi-fi only, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
+#. 'sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot'
+#. Get this repo with 'git clone https://github.com/jmsaltzman/pi_setup'
+#. cd pi_setup
+#. chmod 775 *sh
+#. ./bash_setup.sh
+#. Install RealVNC viewer on another machine to run the Pi headless.
 
 This is a good time to clone a system image.
 
 -------Stop here: need to sort Arduino, virtualenv, and OpenCV installation
+
+Investigating simplest way to install Python 3.6.1
+./py361_install.sh
 
 Arduino setup:
 ./arduino_setup.sh
