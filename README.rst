@@ -9,6 +9,8 @@ This repo is my place to keep files to "wget" as soon as the Pi is online.
 
 Updated for Raspbian Jessie with Pixel 2017-06-21 release, downloaded from:
 https://www.raspberrypi.org/downloads/raspbian/
+And installed on an SD card with Etcher:
+https://etcher.io/
 
 
 **Steps:**
