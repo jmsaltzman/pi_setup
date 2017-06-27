@@ -16,8 +16,8 @@ make
 sudo make altinstall
 
 # Remove installation files
-sudo rm -r Python-3.6.0
-rm Python-3.6.0.tgz
+sudo rm -r Python-3.6.1
+rm Python-3.6.1.tgz
 
 # Remove build tools
 sudo apt-get -y --purge remove build-essential tk-dev
