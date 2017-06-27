@@ -16,14 +16,38 @@ https://etcher.io/
 
 **Steps:**
 
-#. Follow "raspi-config.txt" to change the settings when running 'raspi-config'.
-#. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right. If using wi-fi only, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
-#. 'sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot'
-#. Get this repo with 'git clone https://github.com/jmsaltzman/pi_setup'
-#. cd pi_setup
-#. chmod 775 *sh
-#. ./bash_setup.sh
-#. Install RealVNC viewer on another machine to run the Pi headless.
+* Follow "raspi-config.txt" to change the settings when running
+
+```bash
+sudo raspi-config
+```
+
+or with the graphical version under *[Raspberry] > Preferences > Raspberry Pi Configuration*.
+
+
+* Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right. If using wi-fi only:
+
+```bash
+sudo nano /etc/network/interfaces
+```
+
+and comment out the "iface eth0..." line.
+
+* Set a fixed IP address by right-clicking on the wi-fi icon, choose "Wireless & Wired Network Settings", choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This will make headless operation easier.
+
+* Get this repo and run commands:
+
+```bash
+git clone https://github.com/jmsaltzman/pi_setup
+cd pi_setup
+chmod 775 *sh
+./update.sh
+./bash_setup.sh
+sudo reboot
+```
+
+* Install RealVNC viewer on another machine to run the Pi headless.
+
 
 This is a good time to clone a system image.
 
