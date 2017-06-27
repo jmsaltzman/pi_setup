@@ -12,8 +12,7 @@ Updated for Raspbian Jessie with Pixel 2017-06-21 release.
 Steps:
 ------
 1. "raspi-config.txt" has the settings I prefer for the "raspi-config" program.
-2. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right.
-2b. If using wireless, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
+2. Setup wifi or wired access with the desktop taskbar "Wireless & Wired Network Settings" program, upper right. If using wi-fi only, 'sudo nano /etc/network/interfaces' and comment out the "iface eth0..." line.
 3. 'sudo apt-get -y update ; sudo apt-get -y upgrade ; sudo reboot'
 4. Get this repo with 'git clone https://github.com/jmsaltzman/pi_setup'
 5. cd pi_setup
