@@ -8,8 +8,8 @@ sudo apt-get install -y build-essential tk-dev libncurses5-dev libncursesw5-dev 
   libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
 
 # Download, uncompress, build, and install Python
-wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
-tar xf Python-3.6.1.tar.xz
+wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
+tar xzvf Python-3.6.1.tgz
 cd Python-3.6.1
 ./configure
 make
@@ -17,7 +17,7 @@ sudo make install
 
 # Remove installation files
 sudo rm -r Python-3.6.1
-rm Python-3.6.1.tar.xz
+rm Python-3.6.1.tgz
 
 # Remove build tools
 sudo apt-get -y --purge remove build-essential tk-dev
