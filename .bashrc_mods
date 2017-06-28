@@ -1,4 +1,8 @@
 # .bashrc modifications by jmsaltzman
 
 # Set prompt
-PS1="[\u@\h \# \w] >"
+# Color and escape codes start and end
+PS1_COLOR='1;36'
+PS1_CCODE='\[\e['$PS1_COLOR'm\]'
+CLR_CODE='\[\e[0m\]'
+PS1=$PS1_CCODE'#\! \t \u:\w $'$CLR_CODE
