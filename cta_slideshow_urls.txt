@@ -2,8 +2,4 @@ URL's for the CTA DIY Transit Info Display
 
 http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&ps=1157&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=12549&n4=Addison+%26+Lake+Shore&size=small&alerts=151,146&tto=n
 
-http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=12549&n4=Addison+%26+Lake+Shore&size=small&tto=n
-
-http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=12549&n4=Addison+%26+Lake+Shore&size=medium&tto=n
-
-http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=12549&size=small&tto=n
+http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&tto=n
