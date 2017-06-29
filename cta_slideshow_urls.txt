@@ -1,5 +1,10 @@
-URL's for the CTA DIY Transit Info Display
+URL's for the CTA DIY Transit Info Display from Roscoe & Lake Shore Drive
 
-http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&ps=1157&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=12549&n4=Addison+%26+Lake+Shore&size=small&alerts=151,146&tto=n
+URL generator is at:
+http://www.transitchicago.com/developers/diybtform.aspx
 
-http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&tto=n
+151N, 151S, 146S, 77W, "Normal" size:
+http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=4993&n4=Belmont+%26+Sheridan&tto=n
+
+151N, 151S, 146S, 77W, "Big" size:
+http://www.transitchicago.com/diydisplay/?s1=1157&n1=Lake+Shore+%26+Roscoe&s2=1068&n2=Lake+Shore+%26+Roscoe&s3=1068&n3=Lake+Shore+%26+Roscoe&s4=4993&n4=Belmont+%26+Sheridan&size=big&tto=n
