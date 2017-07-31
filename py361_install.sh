@@ -1,4 +1,6 @@
-#!/bin/sh -f
+#!/bin/sh
+
+
 
 # instructions for installing Python 3.6.1
 # Mostly from: https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f
@@ -7,9 +9,11 @@
 # Issues:
 # "python3" still runs 3.4.2, not 3.6.1
 
+echo "Starting Python 3.6.1 installation..."
+
 # Download, uncompress, build, and install Python
 wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
-tar xzvf Python-3.6.1.tgz
+sudo tar xzvf Python-3.6.1.tgz
 cd Python-3.6.1
 ./configure
 make
