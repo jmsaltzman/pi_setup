@@ -61,6 +61,9 @@ https://etcher.io/
 
 This is a good time to clone the system image.
 
+This guide has been useful:
+https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
+
 
 -------Stop here: need to sort Arduino, virtualenv, and OpenCV installation
 
