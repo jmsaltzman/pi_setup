@@ -21,7 +21,9 @@ https://etcher.io/
   sudo raspi-config
 
 
-* Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right. If using wi-fi only, comment out the "iface eth0..." line in:
+* Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right.
+
+* If using wi-fi only, check the following file and comment out the "iface eth0..." line if it's there:
 
 .. code-block:: bash
 
@@ -30,13 +32,13 @@ https://etcher.io/
 
 * Set a fixed IP address by right-clicking on the wi-fi icon, choose "Wireless & Wired Network Settings", choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This will make headless operation easier.
 
-* Get this repo and run commands:
+* Get this repo and run commands (NOTE: update.sh will take a while):
 
 .. code-block:: bash
 
   git clone https://github.com/jmsaltzman/pi_setup
   cd pi_setup
-  chmod 775 *sh
+  chmod +x *sh
   ./update.sh
   ./bash_setup.sh
   sudo reboot
