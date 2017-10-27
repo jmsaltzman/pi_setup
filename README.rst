@@ -75,8 +75,8 @@ To do:
 
 .. code-block:: bash
 
-wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
-sudo tar xzvf pycharm-community-2017.2.3.tar.gz -C /opt/
+  wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
+  sudo tar xzvf pycharm-community-2017.2.3.tar.gz -C /opt/
 
 
 PyCharm seems to need this to interface with github:
