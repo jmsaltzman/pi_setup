@@ -23,11 +23,11 @@ https://etcher.io/
 
 * Setup wifi or a wired connection with the desktop taskbar *Wireless & Wired Network Settings* program, upper right.
 
-* Choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This will make headless operation easier.
+* Choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This makes headless operation easy.
 
 * If connecting with wifi, choose the SSID and enter the password. You may want to check that the IP address is set correctly by running "ifconfig" in a shell.
 
-* Get this repo and run commands (NOTE: update.sh will take a while):
+* Download this repo and run commands (NOTE: update.sh will take a while):
 
 .. code-block:: bash
 
@@ -39,7 +39,9 @@ https://etcher.io/
   sudo reboot
 
 
-* Install RealVNC viewer on another machine to run the Pi headless. At this point, you can unplug your HDMI and keyboard/mouse cables and put the box wherever you like.
+* Install RealVNC viewer on another machine to run the Pi headless: https://www.realvnc.com/en/connect/download/viewer/
+
+* At this point, you can unplug your HDMI and keyboard/mouse cables and put the box wherever you like.
 
 * Setup git globals:
 
@@ -49,32 +51,36 @@ https://etcher.io/
   git config --global user.email email@example.com
 
 
-This is a good time to clone the system image.
+* Install Python 3.6.3 with this script:
+
+.. code-block:: bash
+
+  py36_install.sh
+
+
+This is a good time to clone the system image!
 
 This guide has been useful:
 https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
 
+tl,dr: On Windows, install Win32 Disk Imager and just clone the SD card to an .img file.
 
--------Stop here: need to sort Arduino, virtualenv, and OpenCV installation
+-------Stop here: need to sort Arduino, virtualenv (needed?), and OpenCV installation
 
 The following steps are not sorted out :)
 
+To do:
 
-* Install Python 3.6.1 with this script:
+* PyCharm installation:
 
 .. code-block:: bash
 
-  py361_install.sh
+wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
+sudo tar xzvf pycharm-community-2017.2.3.tar.gz -C /opt/
 
 
-
-To do:
-
-PyCharm installation
-Seems to need this to interface with github
+PyCharm seems to need this to interface with github:
 sudo apt-get install -y gnome-keyring
-
-
 
 
 Check Arduino setup:
@@ -88,3 +94,6 @@ OpenCV setup takes a while:
 1. ./cv_tools_install_AR1.sh 
 2. ./cv_tools_install_AR2.sh   <-- This will take hours 
 3. ./cv_files_setup.sh
+
+OpenCV installation how-tos:
+https://raspberrypi.stackexchange.com/questions/69169/how-to-install-opencv-on-raspberry-pi-3-in-raspbian-jessie
