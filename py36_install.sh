@@ -5,6 +5,7 @@
 # Simpler: https://raspberrypi.stackexchange.com/questions/59381/how-do-i-update-my-rpi3-to-python-3-6
 
 # Issues:
+# Fails on make install: zlib not installed
 # "python3" still runs 3.4.2, not 3.6.x!
 
 # Set the version
