@@ -5,7 +5,7 @@ This repo is just my place to keep files to "wget" as soon as I get a Pi online.
 
 These files help with intitial setup by adding shell helpers and installing packages for general use and Python, OpenCV, and Arduino development.
 
-Updated for Raspbian Jessie with Pixel 2017-06-21 release, downloaded from:
+NOTE: Updating for Raspbian Stretch with Desktop, 2017-09-07 release, downloaded from:
 https://www.raspberrypi.org/downloads/raspbian/
 
 And installed on an SD card with Etcher:
@@ -21,16 +21,11 @@ https://etcher.io/
   sudo raspi-config
 
 
-* Setup wifi or wired access with the desktop taskbar *Wireless & Wired Network Settings* program, upper right.
+* Setup wifi or a wired connection with the desktop taskbar *Wireless & Wired Network Settings* program, upper right.
 
-* If using wi-fi only, check the following file and comment out the "iface eth0..." line if it's there:
+* Choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This will make headless operation easier.
 
-.. code-block:: bash
-
-  sudo nano /etc/network/interfaces
-
-
-* Set a fixed IP address by right-clicking on the wi-fi icon, choose "Wireless & Wired Network Settings", choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This will make headless operation easier.
+* If connecting with wifi, choose the SSID and enter the password. You may want to check that the IP address is set correctly by running "ifconfig" in a shell.
 
 * Get this repo and run commands (NOTE: update.sh will take a while):
 
@@ -44,7 +39,7 @@ https://etcher.io/
   sudo reboot
 
 
-* Install RealVNC viewer on another machine to run the Pi headless.
+* Install RealVNC viewer on another machine to run the Pi headless. At this point, you can unplug your HDMI and keyboard/mouse cables and put the box wherever you like.
 
 * Setup git globals:
 
@@ -54,13 +49,6 @@ https://etcher.io/
   git config --global user.email email@example.com
 
 
-* Install Python 3.6.1 with this script:
-
-.. code-block:: bash
-
-  py361_install.sh
-
-
 This is a good time to clone the system image.
 
 This guide has been useful:
@@ -68,6 +56,17 @@ https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
 
 
 -------Stop here: need to sort Arduino, virtualenv, and OpenCV installation
+
+The following steps are not sorted out :)
+
+
+* Install Python 3.6.1 with this script:
+
+.. code-block:: bash
+
+  py361_install.sh
+
+
 
 To do:
 
