@@ -2,15 +2,18 @@
 
 # instructions for installing Python 3.6.x
 # Mostly from: https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f
-# Simpler: https://raspberrypi.stackexchange.com/questions/59381/how-do-i-update-my-rpi3-to-python-3-6
 
 # Issues:
-# Fails on make install: zlib not installed
+# Fails on make install: zlib not installed, hopefully fixed with build tools install
 # "python3" still runs 3.4.2, not 3.6.x!
 
-# Set the version
-ver="3.6.1"
+# Install build tools
+sudo apt-get update
+sudo apt-get -f install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev 
+sudo apt-get -f install build-essential libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
 
+# Set the Python version
+ver="3.6.1"
 echo "Starting Python $ver installation, this will take a while..."
 
 # Download, uncompress, build, and install Python
