@@ -75,9 +75,8 @@ To do:
 
 .. code-block:: bash
 
-  wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
-  sudo tar xzvf pycharm-community-2017.2.3.tar.gz -C /opt/
-
+  pycharm_install.sh
+  
 
 PyCharm seems to need this to interface with github:
 sudo apt-get install -y gnome-keyring
