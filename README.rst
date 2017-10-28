@@ -58,19 +58,6 @@ https://etcher.io/
   py36_install.sh
 
 
-This is a good time to clone the system image!
-
-This guide has been useful:
-https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
-
-tl,dr: On Windows, install Win32 Disk Imager and just clone the SD card to an .img file.
-
--------Stop here: need to sort Arduino, virtualenv (needed?), and OpenCV installation
-
-The following steps are not sorted out :)
-
-To do:
-
 * PyCharm installation:
 
 .. code-block:: bash
@@ -78,18 +65,23 @@ To do:
   pycharm_install.sh
   
 
+This is a good time to clone the system image!
+
+This guide is helpful:
+https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
+
+tl,dr: On Windows, install Win32 Disk Imager and just clone the SD card to an .img file.
+
+
+-------Stop here: need to sort Arduino, virtualenv (needed?), and OpenCV installation
+
 PyCharm seems to need this to interface with github:
 sudo apt-get install -y gnome-keyring
-
 
 Check Arduino setup:
 ./arduino_setup.sh
 
-Install virtualenv:
-sudo apt-get install python-virtualenv
-
-Investigate these for Python 3.6.1 compatibility:
-OpenCV setup takes a while:
+These used to work under 2.7 to install OpenCV:
 1. ./cv_tools_install_AR1.sh 
 2. ./cv_tools_install_AR2.sh   <-- This will take hours 
 3. ./cv_files_setup.sh
