@@ -10,4 +10,4 @@ sudo tar xzvf pycharm-community-2017.2.3.tar.gz -C /opt/
 # Remove archive
 rm pycharm-community-2017.2.3.tar.gz
 # Link to pycharm script
-sudo ln -s /opt/pycharm-community-2017.2.3/bin/pycharm.sh pycharm
+sudo ln -s /opt/pycharm-community-2017.2.3/bin/pycharm.sh /usr/local/bin/pycharm
