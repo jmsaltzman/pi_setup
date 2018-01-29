@@ -58,7 +58,7 @@ https://etcher.io/
   py36_install.sh
 
 
-* Install an updated Java with this script:
+* Install an updated Java with this script and **pay attention** since there will be prompts:
 
 .. code-block:: bash
 
