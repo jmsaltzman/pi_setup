@@ -58,6 +58,14 @@ https://etcher.io/
   py36_install.sh
 
 
+* Install an updated Java with this script:
+
+.. code-block:: bash
+
+  java_install.sh
+
+
+
 * Install PyCharm:
 
 .. code-block:: bash
