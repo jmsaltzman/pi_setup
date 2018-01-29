@@ -3,7 +3,7 @@ Setting up a Raspberry Pi
 
 This repo is just my place to keep files to "wget" as soon as I get a Pi online.
 
-These files help with intitial setup by adding shell helpers and installing packages for general use and Python, OpenCV, and Arduino development.
+These files help with intitial setup by adding shell helpers and installing packages for general use and Python development.
 
 NOTE: Updating for Raspbian Stretch with Desktop, 2017-09-07 release, downloaded from:
 https://www.raspberrypi.org/downloads/raspbian/
@@ -51,19 +51,19 @@ https://etcher.io/
   git config --global user.email email@example.com
 
 
-* Install Python 3.6.3 with this script:
+* Install Python 3.6 with this script:
 
 .. code-block:: bash
 
   py36_install.sh
 
 
-* PyCharm installation:
+* Install PyCharm:
 
 .. code-block:: bash
 
   pycharm_install.sh
-  
+
 
 This is a good time to clone the system image!
 
