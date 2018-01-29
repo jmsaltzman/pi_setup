@@ -34,5 +34,4 @@ sudo rm -r Python-$ver
 sudo rm Python-$ver.tgz
 
 
-
 echo "Python $ver installation complete"
