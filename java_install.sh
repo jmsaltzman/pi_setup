@@ -8,7 +8,7 @@ sudo apt-get purge openjdk*
 
 # Install dirmngr since it's not in Stretch. Details here:
 #   https://www.raspberrypi.org/forums/viewtopic.php?t=193536
-sudo apt-get install dirmngr
+sudo apt-get -y install dirmngr
 
 # Add digital key
 sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com EEA14886
@@ -19,8 +19,8 @@ sudo mv sources.list_new /etc/apt/sources.list
 
 # Install Java 8
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
-sudo apt-get install oracle-java8-set-default
+sudo apt-get install -y oracle-java8-installer
+sudo apt-get install -y oracle-java8-set-default
 
 # Remove old Java
 sudo apt-get purge java7*
