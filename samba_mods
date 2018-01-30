@@ -8,3 +8,6 @@
   directory mask = 0777
   Public = yes
   Guest ok = no
+
+# Restart samba with:
+# sudo /etc/init.d/samba restart
