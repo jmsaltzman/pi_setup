@@ -1,10 +1,10 @@
 [share]
-Comment = Pi shared folder
-Path = /home/share
-Browseable = yes
-Writeable = yes
-only guest = no
-create mask = 0777
-directory mask = 0777
-Public = yes
-Guest ok = no
+  Comment = Pi shared folder
+  Path = /home/share
+  Browseable = yes
+  Writeable = yes
+  only guest = no
+  create mask = 0777
+  directory mask = 0777
+  Public = yes
+  Guest ok = no
