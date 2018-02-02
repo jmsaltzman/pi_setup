@@ -55,14 +55,14 @@ https://etcher.io/
 
 .. code-block:: bash
 
-  py36_install.sh
+  ./py36_install.sh
 
 
 * Install an updated Java with this script and **pay attention** since there will be prompts:
 
 .. code-block:: bash
 
-  java_install.sh
+  ./java_install.sh
 
 
 
@@ -70,7 +70,7 @@ https://etcher.io/
 
 .. code-block:: bash
 
-  pycharm_install.sh
+  ./pycharm_install.sh
 
 
 This is a good time to clone the system image!
