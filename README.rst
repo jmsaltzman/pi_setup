@@ -79,8 +79,9 @@ https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
 
 tl,dr: On Windows, install Win32 Disk Imager and just clone the SD card to an .img file.
 
+-------Stop here: need to sort PyCharm, Samba, Arduino, virtualenv (needed?), OpenCV installation
 
--------Stop here: need to sort Arduino, virtualenv (needed?), and OpenCV installation
+TO DO: reduce filesystem size slightly so the SD card can be backed up and restored reliably.
 
 PyCharm seems to need this to interface with github:
 sudo apt-get install -y gnome-keyring
