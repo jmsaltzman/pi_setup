@@ -5,3 +5,7 @@ mv .bash_aliases ~/
 cp ~/.bashrc ~/.bashrc_old
 cat ~/.bashrc .bashrc_mods > .bashrc_new
 mv .bashrc_new ~/.bashrc
+
+# Source this new stuff
+source ~/.bashrc
+
