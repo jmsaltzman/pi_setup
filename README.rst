@@ -34,6 +34,7 @@ https://etcher.io/
   git clone https://github.com/jmsaltzman/pi_setup
   cd pi_setup
   chmod +x *sh
+  chmod +x .bash_aliases
   ./update.sh
   ./bash_setup.sh
   sudo reboot

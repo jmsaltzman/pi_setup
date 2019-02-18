@@ -28,6 +28,9 @@ sudo ln -s /usr/local/bin/python3.6m /usr/bin/python3.6m
 sudo ln -s /usr/local/bin/pyvenv-3.6 /usr/bin/pyvenv-3.6
 sudo ln -s /usr/local/bin/pip3.6 /usr/bin/pip3.6
 
+# Upgrade pip
+sudo pip3 install --upgrade pip
+
 # Remove installation files
 cd ..
 sudo rm -r Python-$ver
