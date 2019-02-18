@@ -3,8 +3,11 @@
 # Installation instructions:
 # https://www.jetbrains.com/help/pycharm/installation-and-launching.html#linux
 
+# Prerequisite: Java installation
+./java_install.sh
+
 # Set the PyCharm version
-ver="2017.3.3"
+ver="2018.3.4"
 echo "Starting PyCharmm $ver installation, this will take a few minutes..."
 
 # Download installer archive

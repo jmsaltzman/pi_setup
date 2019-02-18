@@ -58,14 +58,9 @@ https://etcher.io/
   ./py36_install.sh
 
 
-* Java is needed to run PyCharm; the default Java that comes with Raspbian is old and slow. Install an updated Java with this script and **pay attention** since there will be prompts:
-
-.. code-block:: bash
-
-  ./java_install.sh
-
-
 * Install PyCharm:
+
+(This will install Java as well, since the default that comes with Raspbian is old and slow.)
 
 .. code-block:: bash
 
