@@ -14,7 +14,7 @@ https://etcher.io/
 
 **Steps:**
 
-* Follow [raspi-config.txt](https://github.com/jmsaltzman/pi_setup/blob/master/raspi-config.txt) to change the settings in the GUI program *[Raspberry] > Preferences > Raspberry Pi Configuration* or in a shell with:
+* Follow [raspi-config.txt](https://github.com/jmsaltzman/pi_setup/raspi-config.txt) to change the settings in the GUI program *[Raspberry] > Preferences > Raspberry Pi Configuration* or in a shell with:
 
 .. code-block:: bash
 
