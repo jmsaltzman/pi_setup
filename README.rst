@@ -60,7 +60,7 @@ https://etcher.io/
 
 * Install PyCharm:
 
-(This will install Java as well, since the default that comes with Raspbian is old and slow.)
+    **NOTE**: you will be prompted to approve Java installation, necessary for PyCharm since the default that comes with Raspbian is old and slow.
 
 .. code-block:: bash
 
