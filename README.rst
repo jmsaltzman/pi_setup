@@ -44,12 +44,11 @@ https://etcher.io/
 
 * At this point, you can unplug your HDMI and keyboard/mouse cables and put the box wherever you like.
 
-* Setup git globals:
+* Setup git globals with this script (it will ask for your name and email):
 
 .. code-block:: bash
 
-  git config --global user.name "My Real Name"
-  git config --global user.email email@example.com
+  ./git_setup.sh
 
 
 * Install Python 3.6 with this script:
