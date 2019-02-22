@@ -67,27 +67,23 @@ https://etcher.io/
   ./pycharm_install.sh
 
 
-This is a good time to clone the system image!
+* This is a good time to clone the system image: [Raspberry] > Accessories > SD Card Copier
 
-This guide is helpful:
-https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/
 
-tl,dr: On Windows, install Win32 Disk Imager and just clone the SD card to an .img file.
+-------Stop here: need to sort OpenCV installation, Samba, Arduino, virtualenv
 
--------Stop here: need to sort PyCharm, Samba, Arduino, virtualenv (needed?), OpenCV installation
-
-TO DO: reduce filesystem size slightly so the SD card can be backed up and restored reliably.
 
 PyCharm seems to need this to interface with github:
 sudo apt-get install -y gnome-keyring
 
-Check Arduino setup:
-./arduino_setup.sh
+OpenCV installation how-tos:
+https://raspberrypi.stackexchange.com/questions/69169/how-to-install-opencv-on-raspberry-pi-3-in-raspbian-jessie
+https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/
 
-These used to work under 2.7 to install OpenCV:
+These used to work under 2.7 to install OpenCV, from the cv directory:
 1. ./cv_tools_install_AR1.sh 
 2. ./cv_tools_install_AR2.sh   <-- This will take hours 
 3. ./cv_files_setup.sh
 
-OpenCV installation how-tos:
-https://raspberrypi.stackexchange.com/questions/69169/how-to-install-opencv-on-raspberry-pi-3-in-raspbian-jessie
+Check Arduino setup:
+./arduino_setup.sh
