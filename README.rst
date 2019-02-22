@@ -1,7 +1,7 @@
 Setting up a Raspberry Pi
 =========================
 
-This repo is just my place to keep files to "wget" as soon as I get a Pi online.
+This repo is my place to keep files and instructions for setting up a Pi to my taste.
 
 These files help with intitial setup by adding shell helpers and installing packages for general use and Python development.
 
@@ -11,21 +11,22 @@ https://www.raspberrypi.org/downloads/raspbian/
 And installed on an SD card with Etcher:
 https://etcher.io/
 
+Add an empty file "ssh" to allow ssh access right away: no monitor or keyboard needed ever.
 
 **Steps:**
 
-* Follow https://github.com/jmsaltzman/pi_setup/raspi-config.txt (more or less) to change the settings in the GUI program *[Raspberry] > Preferences > Raspberry Pi Configuration* or in a shell with:
+* Follow https://github.com/jmsaltzman/pi_setup/raspi-config.txt (more or less) to change the settings in a shell with:
 
 .. code-block:: bash
 
   sudo raspi-config
 
 
-* Setup wifi or a wired connection with the desktop taskbar *Wireless & Wired Network Settings* program, upper right.
+* If in the desktop, setup wifi or a wired connection with the desktop taskbar *Wireless & Wired Network Settings* program, upper right.
 
-* Choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This makes headless operation easy.
+    * Choose the interface (eth0 or wlan0) from the pull-down, and enter the IP address you want to use. This makes headless operation easy.
 
-* If connecting with wifi, choose the SSID and enter the password. You may want to check that the IP address is set correctly by running "ifconfig" in a shell.
+    * If connecting with wifi, choose the SSID and enter the password. You may want to check that the IP address is set correctly by running "ifconfig" in a shell.
 
 * Download this repo and run commands (NOTE: update.sh will take a while):
 
@@ -42,7 +43,7 @@ https://etcher.io/
 
 * Install RealVNC viewer on another machine to run the Pi headless: https://www.realvnc.com/en/connect/download/viewer/
 
-* At this point, you can unplug your HDMI and keyboard/mouse cables and put the box wherever you like.
+    * At this point, if you were using the desktop on the Pi, you can unplug your monitor and keyboard/mouse and put the box wherever you like.
 
 * Setup git globals with this script (it will ask for your name and email):
 
