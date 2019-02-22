@@ -6,4 +6,4 @@ sudo apt-get -y upgrade
 sudo apt-get -y update
 
 # Install Synaptic for package management
-sudo apt-get install -y synaptic
+#sudo apt-get install -y synaptic
