@@ -5,32 +5,42 @@
 # Edited 2018-2-22
 
 # ...
+
 # Step #2: Install OpenCV 4 dependencies on your Raspberry Pi
 
 # Let’s update our system:
 sudo apt-get update && sudo apt-get upgrade
+# ok
 
 # And then let’s install developer tools including CMake:
-sudo apt-get install build-essential cmake unzip pkg-config
+sudo apt-get -fym install build-essential cmake unzip pkg-config
+# ok
 
 # Next, let’s install a selection of image and video libraries — these are critical to being able to work with image and video files:
-sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-sudo apt-get install libxvidcore-dev libx264-dev
+sudo apt-get -fym install libjpeg-dev libpng-dev libtiff-dev
+sudo apt-get -fym install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get -fym install libxvidcore-dev libx264-dev
+#ok
 
 # From there, let’s install GTK, our GUI backend:
-sudo apt-get install libgtk-3-dev
+sudo apt-get -fym install libgtk-3-dev
+# ok
 
 # And now let’s install a package which may reduce pesky GTK warnings:
-sudo apt-get install libcanberra-gtk*
+sudo apt-get -fym install libcanberra-gtk*
+# ok
 # The asterisk will grab the ARM specific GTK.
 
 # Followed by installing two packages which contain numerical optimizations for OpenCV:
-sudo apt-get install libatlas-base-dev gfortran
+sudo apt-get -fym install libatlas-base-dev gfortran
+# ok
 
 # And finally, let’s install the Python 3 development headers:
-sudo apt-get install python3-dev
+sudo apt-get -fym install python3-dev
+# ok
 
+
+# =================================================================
 
 # Step #3: Download OpenCV 4 for your Raspberry Pi
 
@@ -45,20 +55,66 @@ sudo apt-get install python3-dev
 cd ~
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.0.0.zip
 wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.0.0.zip
+#ok but didn't download the first time, not sure why
 
 # From there, let’s unzip the archives:
 unzip opencv.zip
 unzip opencv_contrib.zip
+# ok
 
 # I also like to rename the directories:
 mv opencv-4.0.0 opencv
 mv opencv_contrib-4.0.0 opencv_contrib
+# ok
 
 # If you skip renaming the directories, don’t forget to update the CMake paths.
 
 # Now that opencv  and opencv_contrib  are downloaded and ready to go, 
 # let’s set up our environment.
 
+
+# =================================================================
+
+# Step #4: Configure your Python 3 virtual environment for OpenCV 4
+# Let’s grab and install pip, a Python Package Manager.
+
+# [WE ALREADY HAVE PIP]
+# To install pip, simply enter the following in your terminal:
+# wget https://bootstrap.pypa.io/get-pip.py
+# sudo python3 get-pip.py
+
+# Make use of virtual environments for Python development
+# If you aren’t familiar with virtual environments, please take a
+# moment look at this article on RealPython or read the first half
+# of the this blog post on PyImageSearch.
+
+# Virtual environments will allow you to run different versions of
+# Python software in isolation on your system. Today we’ll be setting
+# up just one environment, but you could easily have an environment
+# for each project.
+
+# Let’s go ahead and install   virtualenv  and virtualenvwrapper  now — 
+# they allow for Python virtual environments:
+
+sudo pip install virtualenv virtualenvwrapper
+# sudo rm -rf ~/get-pip.py ~/.cache/pip  # unneeded, already had pip
+
+
+# Edit ~/.profile to add:
+echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
+echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
+echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.profile
+
+# Do this instead?
+# echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python" >> ~/.profile
+
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+
+# Source ~/.profile:
+source ~/.profile
+# ImportError: No module named 'virtualenvwrapper'
+# huh?
+# Checking /usr/local/bin/virtualenvwrapper.sh
 
 
 
