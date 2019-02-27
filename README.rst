@@ -15,7 +15,7 @@ Add an empty file "ssh" to allow ssh access right away: no monitor or keyboard n
 
 **Steps:**
 
-* Follow https://github.com/jmsaltzman/pi_setup/raspi-config.txt (more or less) to change the settings in a shell with:
+* Follow https://github.com/jmsaltzman/pi_setup/blob/master/raspi-config.txt (more or less) to change the settings in a shell with:
 
 .. code-block:: bash
 
