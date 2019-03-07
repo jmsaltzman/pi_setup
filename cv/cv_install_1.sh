@@ -4,6 +4,8 @@
 # https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/
 # Edited 2018-2-22
 
+echo "Installing cv!"
+
 # ...
 
 # Step #2: Install OpenCV 4 dependencies on your Raspberry Pi
@@ -78,10 +80,10 @@ mv opencv_contrib-4.0.0 opencv_contrib
 # Step #4: Configure your Python 3 virtual environment for OpenCV 4
 # Let’s grab and install pip, a Python Package Manager.
 
-# [WE ALREADY HAVE PIP]
+# [WE ALREADY HAVE PIP BUT I GUESS WE DO THIS ANYWAY?]
 # To install pip, simply enter the following in your terminal:
-# wget https://bootstrap.pypa.io/get-pip.py
-# sudo python3 get-pip.py
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
 
 # Make use of virtual environments for Python development
 # If you aren’t familiar with virtual environments, please take a
@@ -97,7 +99,7 @@ mv opencv_contrib-4.0.0 opencv_contrib
 # they allow for Python virtual environments:
 
 sudo pip install virtualenv virtualenvwrapper
-# sudo rm -rf ~/get-pip.py ~/.cache/pip  # unneeded, already had pip
+sudo rm -rf ~/get-pip.py ~/.cache/pip
 
 
 # Edit ~/.profile to add:
@@ -116,36 +118,3 @@ source ~/.profile
 # huh?
 # Checking /usr/local/bin/virtualenvwrapper.sh
 
-
-
-
-
-# --- old script
-sudo apt-get install -y build-essential cmake pkg-config
-sudo apt-get install -y libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
-sudo apt-get install -y libgtk2.0-dev
-sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-sudo apt-get install -y libatlas-base-dev gfortran
-
-wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
-
-sudo pip install virtualenv
-sudo pip install virtualenvwrapper
-
-cat ~/.profile .profile_py_ve > .profile
-cp ~/.profile ~/.profile_old
-cp .profile ~/
-source ~/.profile
-mkvirtualenv cv
-
-sudo apt-get install -y python2.7-dev
-sudo pip install numpy
-
-
-# Extra installs per Pajankar book
-sudo apt-get install -y python-matplotlib fswebcam
-sudo apt-get install -y ffmpeg mencoder
-sudo apt-get install -y libavcodec-extra-53
-sudo apt-get install -y libav-tools
-sudo apt-get install -y fbi
