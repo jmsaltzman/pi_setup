@@ -11,7 +11,7 @@ echo "Installing cv!"
 # Step #2: Install OpenCV 4 dependencies on your Raspberry Pi
 
 # Let’s update our system:
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get -fym update && sudo apt-get -fym upgrade
 # ok
 
 # And then let’s install developer tools including CMake:
@@ -108,12 +108,14 @@ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
 echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.profile
 
 # Do this instead?
-# echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python" >> ~/.profile
+# echo "export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3" >> ~/.profile
 
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
 
 # Source ~/.profile:
 source ~/.profile
+
+exit
 
 
 # Create a virtual environment to hold OpenCV 4 and additional packages
