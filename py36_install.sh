@@ -3,6 +3,7 @@
 # Tested 2017-10-27 with Raspbian 2017-9-7 release, Python 3.6.3
 
 # Mostly from: https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f
+# NOTE: THE INSTRUCTIONS HAVE CHANGED COMPLETELY! This document is deprecated. I need to try the new way.
 
 # Install build tools
 sudo apt-get update
