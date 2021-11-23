@@ -1,7 +1,7 @@
 alias a='alias'
 
 a ll='ls -la'
-a lt='ls -latnr'
+a lt='ls -latr'
 a lld="ll | egrep '^d'"
 a lsd='lld'
 a ltd="lt | egrep '^d'"
