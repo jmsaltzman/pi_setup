@@ -7,8 +7,10 @@
 ./java_install.sh
 
 # Set the PyCharm version
-ver="2018.3.4"
-echo "Starting PyCharmm $ver installation, this will take a few minutes..."
+# example latest direct link: 
+#   https://download.jetbrains.com/python/pycharm-community-2021.3.3.exe
+ver="2021.3.3"
+echo "Starting PyCharmm $ver installation, this will take some time..."
 
 # Download installer archive
 wget https://download.jetbrains.com/python/pycharm-community-$ver.tar.gz
